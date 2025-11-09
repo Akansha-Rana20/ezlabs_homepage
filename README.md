@@ -64,7 +64,7 @@ Expected Response (200):
   "message": "This is a message",
   "created_at": "2025-10-10T05:27:59.371578Z",
   "updated_at": "2025-10-10T05:27:59.371598Z"
-}
+}```
 
 🧩 Project Structure
 ezlabs-homepage/
