@@ -46,6 +46,7 @@ It ensures:
 ### **API Endpoint:**
 POST https://vernanbackend.ezlab.in/api/contact-us/
 
+
 ### **Request Body:**
 ```json
 {
@@ -54,18 +55,57 @@ POST https://vernanbackend.ezlab.in/api/contact-us/
   "phone": "9876543210",
   "message": "This is a message"
 }
+Expected Response (200):
+{
+  "id": 49,
+  "name": "Test user",
+  "email": "testuser@gmail.com",
+  "phone": "908765498",
+  "message": "This is a message",
+  "created_at": "2025-10-10T05:27:59.371578Z",
+  "updated_at": "2025-10-10T05:27:59.371598Z"
+}
 
-Features:
+🧩 Project Structure
+ezlabs-homepage/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Team.jsx
+│   │   ├── Services.jsx
+│   │   ├── Portfolio.jsx
+│   │   ├── ContactForm.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── assets/
+│   │   └── (images/icons)
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── public/
+│   ├── favicon.ico
+│   └── index.html
+│
+├── package.json
+└── README.md
 
-✅ Validation for empty fields
 
-✅ Email format validation
+✅ Features
 
-✅ Success message on API 200 response (“Form Submitted Successfully!”)
+Validation for empty fields
 
-✅ Error handling for invalid or failed requests
+Email format validation
 
-✅ Optional loading indicator and form reset after success
+Success message on API 200 response (“Form Submitted Successfully!”)
+
+Error handling for invalid or failed requests
+
+Optional loading indicator and form reset after success
 
 ✨ Credits
 
@@ -73,9 +113,10 @@ Designed by: EZ Labs (Figma Reference)
 
 Developed by: Akansha Rana
 
-
 📬 Contact
 
 If you’d like to connect or collaborate:
-Email: akansharana00020@gmail.com
-GitHub: https://github.com/Akansha-Rana20/ezlabs_homepage
+
+📧 Email: akansharana00020@gmail.com
+
+💻 GitHub: https://github.com/Akansha-Rana20/ezlabs_homepage
