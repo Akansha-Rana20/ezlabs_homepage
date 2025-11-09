@@ -1,0 +1,25 @@
+.services-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  color: #333;
+}
+
+.service-card:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-5px);
+}
+

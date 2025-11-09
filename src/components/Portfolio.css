@@ -1,0 +1,117 @@
+.portfolio-section {
+  padding: 60px 5%;
+  text-align: center;
+  background: #fafafa;
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px 0 28px;
+}
+.filter-btn {
+  background: transparent;
+  border: 1px solid #eee;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .18s;
+  font-weight: 600;
+  color: #444;
+}
+.filter-btn.active {
+  background: linear-gradient(90deg,#007bff,#00c6ff);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(0,123,255,0.12);
+}
+
+/* grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* card */
+.portfolio-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 28px rgba(8,24,40,0.06);
+}
+.card-inner {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+.card-img {
+  width: 100%;
+  height: 220px;            /* fixed card height so layout is even */
+  object-fit: cover;        /* ensures the photo fills the card nicely */
+  display: block;
+  background: #f2f4f6;      /* shows while image loads */
+  transition: transform .45s cubic-bezier(.2,.9,.2,1);
+}
+
+/* overlay */
+.card-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 14px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.45) 60%);
+  color: white;
+  transform: translateY(12px);
+  opacity: 0;
+  transition: all .28s ease;
+}
+.card-overlay h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.card-overlay .card-cat { margin: 0; opacity: 0.95; font-size: .9rem; }
+
+/* hover */
+.portfolio-card:hover .card-img { transform: scale(1.05); }
+.portfolio-card:hover .card-overlay { transform: translateY(0); opacity: 1; }
+
+/* lightbox */
+.lightbox {
+  position: fixed; inset: 0;
+  display: grid; place-items: center;
+  background: rgba(2,8,15,0.6);
+  z-index: 9999;
+  padding: 24px;
+}
+.lightbox-inner {
+  background: white;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(2,8,20,0.5);
+  overflow: hidden;
+  position: relative;
+}
+.lightbox-inner img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+.lightbox-meta { padding: 16px 20px; text-align: left; }
+.lightbox-close {
+  position: absolute; top: 10px; right: 10px;
+  border: none; background: rgba(255,255,255,0.96);
+  border-radius: 8px; padding: 6px 8px; cursor: pointer;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .card-img { height: 180px; }
+  .lightbox-inner img { height: 320px; }
+}

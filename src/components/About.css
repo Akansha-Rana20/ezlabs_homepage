@@ -1,0 +1,17 @@
+.about-section {
+  text-align: center;
+  background: #f9f9f9;
+}
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.about-section p {
+  max-width: 700px;
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 20px auto;
+}
+
