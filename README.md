@@ -111,13 +111,13 @@ ezlabs-homepage/
 ## 🖼️ Project Screenshots
 
 ### 💻 Desktop View
-![Desktop View](public/screenshots/homepage.png)
+![Desktop View](public/Screenshots/homepage.png)
 
 ### 📱 Mobile Responsive View
-![Mobile View](public/screenshots/responsive-view.png)
+![Mobile View](public/Screenshots/responsive-view.png)
 
 ### 📬 Contact Form Section
-![Contact Form](public/screenshots/contactform.png)
+![Contact Form](public/Screenshots/contactform.png)
 
 ---
 
