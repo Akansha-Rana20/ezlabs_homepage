@@ -66,7 +66,9 @@ Expected Response (200):
   "updated_at": "2025-10-10T05:27:59.371598Z"
 }
 
-🧩 Project Structure
+---
+
+## 🧩 Project Structure
 ezlabs-homepage/
 │
 ├── src/
@@ -94,26 +96,40 @@ ezlabs-homepage/
 ├── package.json
 └── README.md
 
+---
 
-✅ Features
 
-Validation for empty fields
+## Features
+- Validation for empty fields
+- Email format validation
+- Success message on API 200 response (“Form Submitted Successfully!”)
+- Error handling for invalid or failed requests
+- Optional loading indicator and form reset after success
 
-Email format validation
+---
 
-Success message on API 200 response (“Form Submitted Successfully!”)
+## 🖼️ Project Screenshots
 
-Error handling for invalid or failed requests
+### 💻 Desktop View
+![Desktop View](public/screenshots/homepage.png)
 
-Optional loading indicator and form reset after success
+### 📱 Mobile Responsive View
+![Mobile View](public/screenshots/responsive-view.png)
 
-✨ Credits
+### 📬 Contact Form Section
+![Contact Form](public/screenshots/contactform.png)
+
+---
+
+## ✨ Credits
 
 Designed by: EZ Labs (Figma Reference)
 
 Developed by: Akansha Rana
 
-📬 Contact
+---
+
+## 📬 Contact
 
 If you’d like to connect or collaborate:
 
